@@ -643,10 +643,6 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.home-image2 {
-  width: 100px;
-  object-fit: cover;
-}
 @media(max-width: 991px) {
   .home-heading1 {
     text-align: center;
