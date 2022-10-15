@@ -435,7 +435,7 @@
   border-width: 1px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -449,7 +449,7 @@
   border-width: 1px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -463,7 +463,7 @@
   border-width: 1px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -475,7 +475,7 @@
   padding-top: var(--dl-space-space-doubleunit);
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
 }
 .home-card4 {
   width: 30%;
@@ -538,7 +538,7 @@
   border-width: 1px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
@@ -552,7 +552,7 @@
   border-width: 1px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-doubleunit);
-  justify-content: space-between;
+  justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
