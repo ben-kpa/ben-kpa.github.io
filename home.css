@@ -323,6 +323,12 @@
 .home-text28 {
   text-align: left;
 }
+.home-image1 {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+}
 .home-pricing {
   width: 100%;
   display: flex;
@@ -637,6 +643,10 @@
   text-transform: capitalize;
   text-decoration: none;
 }
+.home-image2 {
+  width: 100px;
+  object-fit: cover;
+}
 @media(max-width: 991px) {
   .home-heading1 {
     text-align: center;
@@ -659,6 +669,9 @@
   }
   .home-text15 {
     text-align: center;
+  }
+  .home-image1 {
+    width: 100%;
   }
   .home-pricing-card-container {
     justify-content: center;
