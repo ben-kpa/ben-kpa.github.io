@@ -356,11 +356,15 @@
 .home-text32 {
   font-size: 18px;
   text-align: left;
-  font-weight: 600;
+  font-family: serif;
   line-height: 1.55;
-  letter-spacing: 2;
+  letter-spacing: 2px;
   text-transform: none;
   text-decoration: none;
+}
+.home-link08 {
+  color: #3e4ecb;
+  text-decoration: underline;
 }
 .home-pricing-card-container {
   width: 804px;
@@ -567,7 +571,7 @@
   text-decoration: none;
   background-color: #2e89ff;
 }
-.home-text49 {
+.home-text50 {
   color: var(--dl-color-gray-white);
 }
 .home-footer-container {
@@ -602,14 +606,6 @@
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-link08 {
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.55;
-  margin-right: var(--dl-space-space-doubleunit);
-  text-transform: capitalize;
-  text-decoration: none;
-}
 .home-link09 {
   font-size: 16px;
   font-weight: 700;
@@ -627,6 +623,14 @@
   text-decoration: none;
 }
 .home-link11 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.55;
+  margin-right: var(--dl-space-space-doubleunit);
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.home-link12 {
   font-size: 16px;
   font-weight: 700;
   line-height: 1.55;
