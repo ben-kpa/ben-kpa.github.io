@@ -64,6 +64,7 @@
   border-width: 1px;
   border-radius: 0px;
   text-decoration: none;
+  background-color: transparent;
 }
 .home-burger-menu {
   display: none;
