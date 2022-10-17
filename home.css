@@ -656,6 +656,10 @@
 @media(max-width: 1200px) {
   .home-link {
     align-self: center;
+    margin-right: var(--dl-space-space-fiveunits);
+  }
+  .home-link02 {
+    align-self: center;
   }
 }
 @media(max-width: 991px) {
