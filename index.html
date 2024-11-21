@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben Const - LLM Assisted Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <style>
+        /* Gradient background animation */
+        .gradient-animate {
+            background: linear-gradient(-45deg, #e6f0ff, #f0f7ff, #e6eeff, #f5f8ff);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating emojis */
+        .floating-emojis {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .emoji {
+            position: absolute;
+            animation: float 15s linear infinite;
+            opacity: 0.2;
+            font-size: 1.5rem;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.2;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="gradient-animate min-h-screen">
+    <!-- Floating emojis container -->
+    <div class="floating-emojis" id="floatingEmojis"></div>
+
+    <!-- Main content wrapper with relative positioning and background blur -->
+    <div class="relative z-10">
+        <div class="container  mx-auto px-4 max-w-2xl lg:max-w-3xl xl:max-w-4xl relative z-10 backdrop-blur-sm">
+            <header class="pt-12 mb-12">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="relative group">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-300 rounded-full blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+                        <div class="relative aspect-square w-40 h-40 rounded-full overflow-hidden border-2 border-white">
+                            <img src="image.jpg" alt="Ben Const" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-4xl font-bold text-blue-800">Ben Const</h1>
+                        <p class="text-xl text-blue-600">LLM Assisted Developer</p>
+                        <div class="mt-4">
+                            <a href="https://x.com/benpmd" class="text-blue-500 hover:text-blue-700 transition">
+                                <i class="fab fa-twitter text-xl mr-2"></i>Follow me on X
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- About Me Section -->
+                <section class="mb-12 bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-semibold mb-4 text-blue-800">About Me</h2>
+                <div class="text-gray-700 leading-relaxed space-y-4">
+                    <p>
+                        From microscopes to microservices – I'm that rare specimen who traded lab coats for laptop screens. 
+                        Once upon a time, I was counting cells; now I'm counting lines of code (actually, my AI friends do the counting). 
+                        A biologist who decided that debugging code is more fun than debugging DNA! 🧬→💻
+                    </p>
+                    <p>
+                        Currently living a double life: by day, I'm that medical student who's one final sprint away from becoming a doctor 
+                        (yes, just one more lap around the hospital corridors! 🏃‍♂️). By night, I transform into a code-wielding, 
+                        LLM-whispering solodeveloper. It's like having a secret identity, minus the cape and spandex! 🦸‍♂️
+                    </p>
+                    <p class="text-gray-700">
+                        Plot twist in my medical drama: I'm temporarily trading my stethoscope for a mechanical keyboard! 
+                        But don't worry, I'm not ghosting medicine - we're just in an "it's complicated" relationship status. 🏥💻 
+                        Why the plot twist? Well, while medicine taught me to heal one patient at a time, coding lets me build 
+                        solutions that can help thousands (and the only side effects are occasional bugs)! 
+                    </p>
+                    <p class="text-gray-700 mt-4">
+                        Think of it as a gap year that got a bit out of hand - I fell in love with building stuff! 
+                        Medicine will always be my first love (and who knows, might start that specialty someday), 
+                        but right now, my brain is buzzing with too many "wouldn't it be cool if..." ideas to ignore. 
+                        Besides, have you ever had a computer ask for a sick note? Exactly! 😉
+                    </p>
+                    <p>
+                        During my years of burning the midnight oil (and occasionally my synapses), I had an epiphany: 
+                        "Hey, wouldn't it be cool if there was an app for that?" Turns out, there wasn't! So, I decided to build them myself. 
+                        It's like I'm the Bob the Builder of apps, but instead of "Can we fix it?", I'm asking, "Can we app it?" (Spoiler: Yes, we can! 🛠️)
+                    </p>
+                    <p>
+                        Now, I'm on a mission to create a digital Swiss Army knife for students, researchers, and healthcare pros. 
+                        Think of it as turning those "I wish I had..." moments into "Holy cow, it exists!" realities. 
+                        From LLM-powered study buddies to research wizards and healthcare helpers, I'm basically building a digital 
+                        version of all the things I wished for while drowning in textbooks and patient charts. 🧙‍♂️📚
+                    </p>
+                    <p class="italic text-blue-600">
+                        Status: Currently juggling final medical rotations while building the next big thing™. 
+                        If my code has bugs, blame it on the night shifts! And if you see me talking to my computer, don't worry – 
+                        I'm just consulting with my AI co-pilot on our next world-changing app. It's totally normal... right? 🌙💻🤖
+                    </p>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-800">Projects</h2>
+                <div class="bg-blue-50 p-4 rounded-lg mb-6 text-sm italic text-blue-600">
+                    <p>🚧 Project showcase under construction! 🏗️</p>
+                    <p>These are just teasers - I promise to update with actual projects once I find time between medical emergencies and debugging sessions. 
+                    If you're reading this, I probably got distracted by either a fascinating case study or an irresistible bug hunt! Check back soon™ 😅</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Paper Screening Tool</h3>
+                        <p class="text-gray-700">An intelligent tool for efficient academic paper screening.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Project Summary</h3>
+                        <p class="text-gray-700">Automated project summarization for LLM interaction.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Prompt Keep</h3>
+                        <p class="text-gray-700">Prompt management and organization system.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-12">
+                <h2 class="text-2xl font-semibold mb-4 text-blue-800">Experience</h2>
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <p class="text-gray-700 mb-4">Creating anything with any technology via assisted LLM programming</p>
+                    <p class="text-blue-600 italic mb-6 text-sm">Warning: Side effects may include occasional AI hallucinations and spontaneous feature additions 😄</p>
+            
+                    <div class="space-y-6">
+                        <!-- Main Stack -->
+                        <div class="p-6 bg-gradient-to-r from-blue-50 to-white rounded-lg border-l-4 border-blue-400">
+                            <p class="font-semibold text-lg mb-4">Main Stack 🎯</p>
+                            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                                <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                    <i class="fab fa-react text-3xl text-blue-600 mb-2"></i>
+                                    <p class="font-semibold">React</p>
+                                    <p class="text-sm text-gray-600">+Next.js</p>
+                                </div>
+                                <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                    <i class="fab fa-python text-3xl text-blue-600 mb-2"></i>
+                                    <p class="font-semibold">Python</p>
+                                    <p class="text-sm text-gray-600">+Django</p>
+                                </div>
+                                <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-mobile-alt text-3xl text-blue-400 mb-2"></i>
+                                    <p class="font-semibold">Flutter</p>
+                                    <p class="text-sm text-gray-600">💙 Favorite</p>
+                                </div>
+                                <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-database text-3xl text-blue-600 mb-2"></i>
+                                    <p class="font-semibold">SQLite</p>
+                                    <p class="text-sm text-gray-600">My beloved ♥️</p>
+                                </div>
+                                <div class="text-center p-4 bg-white rounded-lg shadow-sm">
+                                    <i class="fas fa-bolt text-3xl text-blue-600 mb-2"></i>
+                                    <p class="font-semibold">Supabase</p>
+                                    <p class="text-sm text-gray-600">When needed</p>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Flutter Love -->
+                        <div class="p-6 bg-gradient-to-r from-blue-50 to-white rounded-lg border-l-4 border-blue-400">
+                            <p class="font-semibold text-lg mb-2">The Flutter Affair 💙</p>
+                            <p class="text-gray-700">Ah, Flutter! My go-to for cross-platform magic. When web apps just won't cut it, 
+                            Flutter steps in like a superhero wearing a blue cape. One codebase, all platforms - it's like having your cake 
+                            and eating it too! And those smooth animations? *chef's kiss* 🎯 
+                            Who knew Dart would dart straight into my heart? (Sorry, couldn't resist that pun! 😅)</p>
+                        </div>
+            
+                        <!-- The React Commitment -->
+                        <div class="p-6 bg-gradient-to-r from-blue-50 to-white rounded-lg border-l-4 border-blue-400">
+                            <p class="font-semibold text-lg mb-2">The React Commitment 💍</p>
+                            <p class="text-gray-700">After trying everything under the sun, I finally put a ring on React+Next. 
+                            Sure, I might flirt with other frameworks, but this is my "til deployment do us part" stack! 
+                            The perfect balance of flexibility and structure - just what I needed in a long-term tech relationship. 💕</p>
+                        </div>
+            
+            
+                        <!-- The Fundamentals -->
+                        <div class="p-6 bg-gradient-to-r from-gray-50 to-white rounded-lg border-l-4 border-gray-400">
+                            <p class="font-semibold text-lg mb-2">The Fundamentals Trio</p>
+                            <div class="flex items-center gap-4 text-lg">
+                                <span><i class="fab fa-html5 text-orange-500 mr-1"></i>HTML</span>
+                                <span><i class="fab fa-css3-alt text-blue-500 mr-1"></i>CSS</span>
+                                <span><i class="fab fa-js text-yellow-500 mr-1"></i>JavaScript</span>
+                            </div>
+                        </div>
+            
+                        <!-- The Rust Adventure -->
+                        <div class="p-6 bg-gradient-to-r from-orange-50 to-white rounded-lg border-l-4 border-orange-400">
+                            <p class="font-semibold text-lg mb-2">The Rust Adventure 🦀</p>
+                            <p class="text-gray-700">That one time I decided to build a desktop app and thought "Hey, why not add Rust to the mix?" 
+                            One Tauri project later, I'm still trying to convince the borrowing checker we can be friends! At least my memory is safe, 
+                            even if my confidence isn't! 😅</p>
+                        </div>
+            
+                        <!-- The New Crush -->
+                        <div class="p-6 bg-gradient-to-r from-purple-50 to-white rounded-lg border-l-4 border-purple-400">
+                            <p class="font-semibold text-lg mb-2">The New Crush: Elixir & Phoenix 💜</p>
+                            <p class="text-gray-700">Just when I thought I was settled, Elixir walked into my IDE... 
+                            Now I'm learning how to be concurrent and fault-tolerant (in my code, still working on those qualities personally 😅). 
+                            Phoenix is rising to the top of my "Technologies I'm Excited About" list faster than you can say "GenServer"! 
+                            The functional programming paradigm has never looked so good! 🦅✨</p>
+                        </div>
+            
+<!-- Previously Used -->
+<div class="p-6 bg-gradient-to-r from-green-50 to-white rounded-lg border-l-4 border-green-400">
+    <p class="font-semibold text-lg mb-4">The Ex-Framework Club 🌟</p>
+    
+    <div class="space-y-6">
+        <div>
+            <div class="flex items-center mb-2">
+                <i class="fab fa-vuejs text-3xl text-green-600 mr-3"></i>
+                <p class="font-semibold">Vue.js</p>
+            </div>
+            <p class="text-gray-700 text-sm italic">
+                Ah, Vue... We had some beautiful times together, especially that romantic Tauri project. 
+                But sometimes you have to let go, right? It's not you, it's me - I just fell harder for React. 
+                We'll always have the git history! 💚
+            </p>
+        </div>
+
+        <div>
+            <div class="flex items-center mb-2">
+                <i class="fab fa-angular text-3xl text-red-600 mr-3"></i>
+                <p class="font-semibold">Angular</p>
+            </div>
+            <p class="text-gray-700 text-sm italic">
+                Angular was like that inspiring mentor who taught me so much about structure and TypeScript. 
+                Deeply grateful for the lessons, but we grew apart. Still amazed by its architecture, 
+                but these days I prefer my components with a little less ceremony! ❤️
+            </p>
+        </div>
+    </div>
+</div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-semibold mb-4 text-blue-800">Formal Education</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">B.Sc. in Biology</h3>
+                        <p class="text-gray-700">Foundation in Life Sciences</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="text-xl font-semibold mb-2 text-blue-700">Student of Medicine</h3>
+                        <p class="text-gray-700">Currently expanding medical knowledge</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="mt-12 text-center text-gray-600">
+            <p>© 2024 Ben Const. All rights reserved.</p>
+        </footer>
+    </div>
+</div>
+
+<script>
+    const emojis = ['💻', '🚀', '⚡', '🔮', '💡', '🎯', '🦀', '💙', '🧬', '⚕️'];
+    const emojiContainer = document.getElementById('floatingEmojis');
+
+    function createEmoji() {
+        const emoji = document.createElement('div');
+        emoji.className = 'emoji';
+        emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+        emoji.style.left = Math.random() * 100 + 'vw';
+        emoji.style.animationDuration = (Math.random() * 15 + 15) + 's';
+        emoji.style.opacity = (Math.random() * 0.2).toString();
+        emojiContainer.appendChild(emoji);
+
+        // Remove emoji after animation
+        emoji.addEventListener('animationend', () => {
+            emoji.remove();
+        });
+    }
+
+    // Create initial emojis
+    for (let i = 0; i < 10; i++) {
+        createEmoji();
+    }
+
+    // Create new emoji every 3 seconds
+    setInterval(createEmoji, 3000);
+</script>
+</body>
+</html>
